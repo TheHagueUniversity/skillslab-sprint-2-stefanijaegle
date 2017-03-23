@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Orienteering</title>
+	<link rel="stylesheet"type ="text/css"href= "css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+	
+</head>
+<body>
+<header>
+	<div id= "banner"></div>
+		<div id=content_area>
+
+    
+       <div class="hero"; style= top: 80px; left: 300px; align="center">
+          <a href="main.html">
+            <img src="images/orienteering_logo.png" alt="Logo">
+          </a>
+
+		</div>
+	</div> 
+	
+	 </header>
+
+	<div id= "container"> 
+
+	<a href="main.html"></a>
+
+	<div id= "navigation"> 
+
+
+		
+		
+		<nav>
+		<ul id="navmenu">
+
+		<li> <a href= "main.html" class="button-main active"> HOME </a> </li>
+		<li><a href="footO.html" class="button-main">FOOT-O</a></li>
+		<li><a href="trailO.html" class="button-main">TRAIL-O</a></li>
+		<li><a href="mtbO.html" class="button-main">MTB-O</a></li>
+        <li><a href="skiO.html" class="button-main">SKI-O</li></a>
+		
+		</ul>
+		</nav>
+
+	</div> 
+
+
+	<figure> <center><img src="images/map_banner.jpg"></center> </figure>
+
+	<h1> What is orienteering?</h1>
+
+	<p> Orienteering is a group of sports that requires navigational skills using a map and compass to navigate from point to point in diverse and usually unfamiliar terrain, and normally moving at speed. Participants are given a topographical map, usually a specially prepared orienteering map, which they use to find control points. Originally a training exercise in land navigation for military officers, orienteering has developed many variations. Among these, the oldest and the most popular is <b>foot orienteering </b>. For the purposes of this article, foot orienteering serves as a point of departure for discussion of all other variations, but almost any sport that involves racing against a clock and requires navigation with a map is a type of orienteering. Orienteering is included in the programs of world sporting events including the World Games and World Police and Fire Games.
+
+	</p>
+
+
+ 	
+
+
+ 	<h1> Running Wild: Orienteering | The New York Times </h1>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/H3TLmTNOb5E" frameborder="0" allowfullscreen></iframe> 
+
+	<h1> Look for the nearest forest and get started </h1>
+	<div id="map" style="width:100%;height:400px"></div>
+	<h2> Current Location: Tha Hague, Netherlands </h2>
+	<script>
+	function myMap() {
+	  var mapCanvas = document.getElementById("map");
+	  var mapOptions = {
+	    center: new google.maps.LatLng(52.078663, 4.288788), 
+	    zoom: 13,
+	    scrollwheel:false,
+	  }
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+
+	<h1> Send your questions here: </h1>
+		<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>						
+
+
+
+<footer>
+    <p id="footer">
+    &copy; Copyright by Stefānija Egle
+        </p>
+</footer>
+              
+
+		
+</body>
+</html>
